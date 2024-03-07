@@ -45,5 +45,7 @@ Migrate the tables
 php artisan migrate
 ```
 
-## Contributing
-Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
+My changes to the README file:
+CSS Bootstrap source : https://bootstrapmade.com/zenblog-bootstrap-blog-template/download/
+
+
