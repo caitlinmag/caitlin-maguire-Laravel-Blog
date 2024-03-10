@@ -46,6 +46,7 @@ php artisan migrate
 ```
 
 My changes to the README file:
-CSS Bootstrap source : https://bootstrapmade.com/zenblog-bootstrap-blog-template/download/
-
+Fashion blog websites I have taken inspiration from: 
+https://www.joor.com/insights/on-trend-womens-resort-2024-fashion-trend-report
+https://glamazondiaries.com/ 
 
