@@ -97,6 +97,7 @@ span{
   text-align: center;
 }
 
+/* code from the app css file - I only changed the colour of checkbox */
 .form-checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -119,8 +120,14 @@ span{
   border-radius: 0.25rem;
 }
 
+/* changed the colour of the checkbox shadow and border  */
 .form-checkbox:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgb(85,83,83,1);
   border-color: black;
+}
+
+/* submit button */
+button:hover{
+background-color: white;
 }
