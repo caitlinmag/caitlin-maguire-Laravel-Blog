@@ -9,6 +9,14 @@
     </div>
 </div>
 
+<div class="m-auto sm:m-auto text-left w-4/5 block">
+            <h2 class="text-3xl font-extrabold text-gray-600">
+</h2> 
+            <h3 class="title-text">Adidas Gazelle Bold</h3>
+            <img src="images\adidasGazelle.png" width="500" height="400" alt="">
+
+        </div>
+
 @if (session()->has('message'))
     <div class="w-4/5 m-auto mt-10 pl-2">
         <p class="w-2/6 mb-4 text-gray-50 bg-green-500 rounded-2xl py-4">
