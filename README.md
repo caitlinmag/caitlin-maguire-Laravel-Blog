@@ -50,3 +50,6 @@ Fashion blog websites I have taken inspiration from:
 https://www.joor.com/insights/on-trend-womens-resort-2024-fashion-trend-report
 https://glamazondiaries.com/ 
 
+Favicon Image: 
+https://www.vectorstock.com/royalty-free-vector/clothes-hanger-icon-vector-7701085
+
