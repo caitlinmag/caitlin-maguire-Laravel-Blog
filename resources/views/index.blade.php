@@ -88,7 +88,9 @@ News
             </div>
         </div>
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+            <img src="images/mainPageImage.png" alt="" class="main-image">
+            <div class="bg-yellow-700">
+</div>
         </div>
     </div>
 @endsection
