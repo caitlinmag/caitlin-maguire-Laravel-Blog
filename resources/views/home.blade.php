@@ -21,6 +21,13 @@
                     You are logged in!
                 </p>
             </div>
+
+            <div class="container my-5 py-5 px-5 mx-5">
+            <form>
+            <input type="search" class="form-control" placeholder="Find User" name="search" value="{{ request('search') }}">
+</form>
+
+</div>
         </section>
     </div>
 </main>

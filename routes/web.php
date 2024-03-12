@@ -27,3 +27,14 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/', function(){
+
+    //checking for user input
+    if(request('search')){
+        $users = User::where('name', 'like', '%' .request('search') . '%')->get();
+    }else{
+        $users = User:: all();
+    }
+    
+    return view('home')->with('users', $users);
+});
