@@ -30,8 +30,7 @@ create database laravelblog;
 exit;
 ```
 
-Setup your database credentials in the .env file <br>
-```
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -44,6 +43,12 @@ Migrate the tables
 ```
 php artisan migrate
 ```
+My Blog theme:
+Fashion\clothing
+I took this opportunity to create a blog on a topic that I have a great interest in, I like keeping up to date
+with what is trending in the fashion world and I love the design aspect of software development. 
+I have went for what I consider a minimal, clean and aesthetically pleasing design with my colour scheme.
+
 CSS:
 For my css I have used a combination of my own css in the mainStyles file, and tailwind css throughout. 
 
@@ -56,3 +61,32 @@ https://glamazondiaries.com/
 Favicon Image: 
 https://www.vectorstock.com/royalty-free-vector/clothes-hanger-icon-vector-7701085
 
+The website I used to help me add in a functioning search bar:
+https://www.educative.io/answers/how-to-implement-search-in-laravel
+
+put this code back in for the search bar
+<!-- List items for the search bar -->
+ <ul class="list-group mt-3">
+@forelse($users as $user)
+    <li class="list-group-item">{{ $user->name }}</li>
+@empty
+    <li class="list-group-item list-group-item-danger">User Not Found</li>
+@endforelse
+</ul> 
+
+currently not working
+
+and this in the routes 
+
+
+Route::get('/', function(){
+
+    //checking for user input
+    if(request('search')){
+        $users = User::where('name', 'like', '%' .request('search') . '%')->get();
+    }else{
+        $users = User:: all();
+    }
+    
+    return view('home')->with('users', $users);
+});

@@ -21,6 +21,15 @@
                 <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Home') }}</a>
                 <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
                 <a href="{{url('/StylePredictions') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Predictions')}}</a>
+                <input type="search" class="form-control" placeholder="Find User" name="search">
+</form>
+
+<!-- List items for the search bar -->
+<ul class="list-group mt-3">
+    <li class="list-group-item">caitlin</li>
+    <li class="list-group-item">rosie</li>
+    <li class="list-group-item">jane</li>
+</ul>
             @else
             <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Home') }}</a>
                 <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
@@ -68,6 +77,11 @@
             </div>
         </div>
     </div>
+    <form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </div>
 </body>
 </html>
