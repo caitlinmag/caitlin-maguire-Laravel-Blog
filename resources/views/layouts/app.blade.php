@@ -25,16 +25,17 @@
                         {{ config('app.name', 'TheFashionDiary') }}
                     </a>
                 </div>
-                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+                <nav class="space-x-4 text-white text-sm sm:text-base">
                     @guest
-                    <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Home') }}</a>
-                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{__('blog')}}</a>
-                        <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('home') }}</a>
+                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
+                <a href="{{url('/StylePredictions') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Predictions')}}</a>
+                        <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         @if (Route::has('register'))
-                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                         @endif
                     @else
-                        <span>{{ Auth::user()->name }}</span>
+                     <span>Welcome back</span><span>{{Auth::user()->name }}</span>
 
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
