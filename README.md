@@ -44,6 +44,9 @@ Migrate the tables
 ```
 php artisan migrate
 ```
+CSS:
+For my css I have used a combination of my own css in the mainStyles file, and tailwind css throughout. 
+
 
 My changes to the README file:
 Fashion blog websites I have taken inspiration from: 

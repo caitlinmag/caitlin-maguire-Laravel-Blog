@@ -18,12 +18,16 @@
     @if(Route::has('login'))
         <div class="absolute top-0 right-0 mt-4 mr-4 space-x-4 sm:mt-6 sm:mr-6 sm:space-x-6">
             @auth
-                <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Home') }}</a>
-                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{__('blog')}}</a>
+                <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Home') }}</a>
+                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
+                <a href="{{url('/StylePredictions') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Predictions')}}</a>
             @else
-                <a href="{{ route('login') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Login') }}</a>
+            <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Home') }}</a>
+                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
+                <a href="{{url('/StylePredictions') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Predictions')}}</a>
+                <a href="{{ route('login') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Login') }}</a>
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Register') }}</a>
+                    <a href="{{ route('register') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Register') }}</a>
                 @endif
             @endauth
         </div>
