@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,13 +29,14 @@ Auth::routes();
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', function(){
+//checking for the search input
+if(request('search')){
+    $users = User::where('name', 'like', '%' . request('search').'%')->get();
+}else{
+    $users = User::all();
+}
 
-    //checking for user input
-    if(request('search')){
-        $users = User::where('name', 'like', '%' .request('search') . '%')->get();
-    }else{
-        $users = User:: all();
-    }
-    
-    return view('home')->with('users', $users);
+return view('welcome')->with('users', $users);
 });
+
+
