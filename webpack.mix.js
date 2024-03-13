@@ -24,3 +24,5 @@ if (mix.inProduction()) {
   mix
     .version();
 }
+
+mix.css('resources/css/mainStyles.css', 'public/css');

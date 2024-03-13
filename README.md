@@ -64,21 +64,6 @@ https://www.vectorstock.com/royalty-free-vector/clothes-hanger-icon-vector-77010
 The website I used to help me add in a functioning search bar:
 https://www.educative.io/answers/how-to-implement-search-in-laravel
 
-put this code back in for the search bar
-<!-- List items for the search bar -->
- <ul class="list-group mt-3">
-@forelse($users as $user)
-    <li class="list-group-item">{{ $user->name }}</li>
-@empty
-    <li class="list-group-item list-group-item-danger">User Not Found</li>
-@endforelse
-</ul> 
-
-currently not working
-
-and this in the routes 
-
-
 Route::get('/', function(){
 
     //checking for user input
@@ -90,3 +75,12 @@ Route::get('/', function(){
     
     return view('home')->with('users', $users);
 });
+
+<!-- List items for the search bar -->
+<ul class="list-group mt-3">
+@forelse($users as $user)
+    <li class="list-group-item">{{ $user->name }}</li>
+@empty
+    <li class="list-group-item list-group-item-danger">User Not Found</li>
+@endforelse
+</ul> 
