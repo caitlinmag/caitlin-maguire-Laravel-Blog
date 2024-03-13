@@ -64,23 +64,32 @@ https://www.vectorstock.com/royalty-free-vector/clothes-hanger-icon-vector-77010
 The website I used to help me add in a functioning search bar:
 https://www.educative.io/answers/how-to-implement-search-in-laravel
 
-Route::get('/', function(){
+Search bar to search for articles
+table in database for fashion articles 
 
-    //checking for user input
-    if(request('search')){
-        $users = User::where('name', 'like', '%' .request('search') . '%')->get();
-    }else{
-        $users = User:: all();
-    }
-    
-    return view('home')->with('users', $users);
-});
-
-<!-- List items for the search bar -->
-<ul class="list-group mt-3">
+<div class="container my-5 py-5 px-5 mx-5">
+<form>
+<input type="search" class="form-control" placeholder="Find A User" name="search" value="{{ request('search')}}">
+</form>
+          <!-- List items for the search bar -->
+          <ul class="list-group mt-3">
 @forelse($users as $user)
     <li class="list-group-item">{{ $user->name }}</li>
 @empty
     <li class="list-group-item list-group-item-danger">User Not Found</li>
 @endforelse
-</ul> 
+</ul>      
+
+</div>
+
+Route::get('/', function(){
+//checking for the search input
+if(request('search')){
+    $users = User::where('name', 'like', '%' . request('search').'%')->get();
+}else{
+    $users = User::all();
+}
+
+return view('welcome')->with('users', $users);
+});
+
