@@ -1,3 +1,4 @@
+
 /* nav bar */
 .bg-blue-900 {
     --bg-opacity: 1;
@@ -155,4 +156,5 @@ background-color: white;
 .group:hover .group-hover\:bg-gray-900 {
   --bg-opacity: 1;
   background-color: rgb(85,83,83,1);
+  background-color: #eec5c5;
 }
