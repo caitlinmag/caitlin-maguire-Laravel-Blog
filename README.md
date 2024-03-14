@@ -43,6 +43,10 @@ Migrate the tables
 ```
 php artisan migrate
 ```
+Commands:
+php artisan serve
+npm run watch
+
 My Blog theme:
 Fashion\clothing
 I took this opportunity to create a blog on a topic that I have a great interest in, I like keeping up to date
@@ -67,29 +71,4 @@ https://www.educative.io/answers/how-to-implement-search-in-laravel
 Search bar to search for articles
 table in database for fashion articles 
 
-<div class="container my-5 py-5 px-5 mx-5">
-<form>
-<input type="search" class="form-control" placeholder="Find A User" name="search" value="{{ request('search')}}">
-</form>
-          <!-- List items for the search bar -->
-          <ul class="list-group mt-3">
-@forelse($users as $user)
-    <li class="list-group-item">{{ $user->name }}</li>
-@empty
-    <li class="list-group-item list-group-item-danger">User Not Found</li>
-@endforelse
-</ul>      
-
-</div>
-
-Route::get('/', function(){
-//checking for the search input
-if(request('search')){
-    $users = User::where('name', 'like', '%' . request('search').'%')->get();
-}else{
-    $users = User::all();
-}
-
-return view('welcome')->with('users', $users);
-});
-
+            <!-- <input type="hidden" name="post_slug" value="{{ $Post->slug}}"> -->

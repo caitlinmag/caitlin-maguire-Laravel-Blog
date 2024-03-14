@@ -28,15 +28,18 @@
                 <nav class="space-x-4 text-white text-sm sm:text-base">
                     @guest
                     <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('home') }}</a>
-                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
-                <a href="{{url('/StylePredictions') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Predictions')}}</a>
+                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Blog')}}</a>
+                <a href="{{url('/Trends') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         @if (Route::has('register'))
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                         @endif
-                        <a class="no-underline hover:underline" href="{{ route('articles.index')}}">{{__('Search')}}</a>
                     @else
                      <span>Welcome back</span><span>{{Auth::user()->name }}</span>
+                     <a href="{{ url('/') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('home') }}</a>
+                <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Blog')}}</a>
+                <a href="{{url('/Trends') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
+                <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Dashboard') }}</a>
 
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
@@ -45,8 +48,6 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}
                         </form>
-                        <a class="no-underline hover:underline">Trends</a>
-
                     @endguest
                 </nav>
             </div>
