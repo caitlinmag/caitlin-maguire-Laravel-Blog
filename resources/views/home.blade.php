@@ -16,10 +16,6 @@
                 Dashboard
             </header>
 
-            <form action="{{ url('search') }}" method="GET">
-                    <input type="text" name="search" placeholder="Find Articles">
-                    <button type="submit">Search</button>    
-           </form>
 
             <div class="w-full p-6">
                 <p class="text-gray-700">

@@ -34,6 +34,7 @@
                         @if (Route::has('register'))
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                         @endif
+                        <a class="no-underline hover:underline" href="{{ route('articles.index')}}">{{__('Search')}}</a>
                     @else
                      <span>Welcome back</span><span>{{Auth::user()->name }}</span>
 
