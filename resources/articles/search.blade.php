@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <form action="{{ url('search'}}" method="GET">
                     <input type="text" name="search" placeholder="Find Articles">
                     <button type="submit">Search</button>    
@@ -19,5 +18,5 @@
             </section>
         </div>
     </div>
-</main>
+</main>a
 @endsection
