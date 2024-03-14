@@ -19122,12 +19122,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************!*\
   !*** ./resources/css/mainStyles.css ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nSyntaxError\n\n(161:1) C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\resources\\css\\mainStyles.css Unexpected }\n\n \u001b[90m 159 | \u001b[39mbackground-color\u001b[33m:\u001b[39m \u001b[35m#eec5c5\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 160 | \u001b[39m\u001b[33m}\u001b[39m\n\u001b[1m\u001b[31m>\u001b[39m\u001b[22m\u001b[90m 161 | \u001b[39m\u001b[33m}\u001b[39m\n \u001b[90m     | \u001b[39m\u001b[1m\u001b[31m^\u001b[39m\u001b[22m\n\n    at processResult (C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\node_modules\\webpack\\lib\\NormalModule.js:841:19)\n    at C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\node_modules\\webpack\\lib\\NormalModule.js:964:5\n    at C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\node_modules\\loader-runner\\lib\\LoaderRunner.js:400:11\n    at C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\node_modules\\loader-runner\\lib\\LoaderRunner.js:252:18\n    at context.callback (C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at Object.loader (C:\\Users\\caitl\\Desktop\\caitlin-maguire-Laravel-Blog\\node_modules\\postcss-loader\\dist\\index.js:140:7)");
 
 /***/ }),
 
@@ -19436,7 +19433,6 @@ process.umask = function() { return 0; };
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/mainStyles": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -19487,9 +19483,9 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/mainStyles","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/mainStyles","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/mainStyles","css/app"], () => (__webpack_require__("./resources/css/mainStyles.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/mainStyles.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

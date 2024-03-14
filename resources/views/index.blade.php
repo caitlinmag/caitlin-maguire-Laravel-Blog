@@ -29,7 +29,7 @@ Fashion of 2024
             <a 
                 href="/blog"
                 class="uppercase bg-blue-500 text-s font-extrabold py-3 px-8 rounded-3xl">
-                View Trends
+                View Posts
             </a>
         </div>
     </div>

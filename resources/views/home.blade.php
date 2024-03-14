@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -16,15 +17,29 @@
                 Dashboard
             </header>
 
-
             <div class="w-full p-6">
                 <p class="text-gray-700">
                     You are logged in!
                 </p>
             </div>
 
-            
+            <h2>Comment Section</h2>
+            <div class="comment-area">
+        <h3 class="comment"> Leave a comment </h3>
+        <form action="{{url('comments')}}" method="POST">
+            <textarea name="comment_body" class="form-control" rows="3" required></textarea>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form> 
 </div>
+        <div class="user-area">
+        <h3 class="user-name">User One
+        <small class="ms-3 text">Commented on: 3-8-2022</small>
+        </h3>
+</div>
+<a href="" class="btn btn-primary btn">Edit</button>
+        <a href="" class="btn btn-primary btn">Delete</button>
+</div>
+    
         </section>
     </div>
 </main>

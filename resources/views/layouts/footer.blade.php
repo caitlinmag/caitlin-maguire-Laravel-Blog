@@ -13,14 +13,14 @@
                 </li>
                 <li class="pb-1">
                     <a href="/blog">
-                        Trends
+                        Posts
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/predictions">
-                        Predictions
-</a>
-</li>
+                    <a href="/trends">
+                        Trends
+                    </a>
+                    </li>
                 <li class="pb-1">
                     <a href="/login">
                         Login
@@ -31,11 +31,6 @@
                         Register
                     </a>
                 </li>
-                <li class="pb-1">
-                    <a href="/StylePredictions">
-Predictions
-</a>
-</li>
             </ul>
         </div>
 
