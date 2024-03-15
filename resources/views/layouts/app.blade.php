@@ -35,7 +35,7 @@
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                         @endif
                     @else
-                     <span>Welcome back</span><span>{{Auth::user()->name }}</span>
+                     <span class="text-white">Welcome back</span><span>{{Auth::user()->name }}</span>
                      <a href="{{ url('/') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('home') }}</a>
                 <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Blog')}}</a>
                 <a href="{{url('/comments') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Comments')}}</a>
@@ -44,7 +44,7 @@
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                                document.getElementById('logout-form').submit();">{{ __('LOGOUT') }}</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}
                         </form>

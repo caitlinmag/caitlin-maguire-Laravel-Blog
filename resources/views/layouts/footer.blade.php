@@ -17,8 +17,8 @@
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/trends">
-                        Trends
+                    <a href="/comments">
+                        Comments
                     </a>
                     </li>
                 <li class="pb-1">
