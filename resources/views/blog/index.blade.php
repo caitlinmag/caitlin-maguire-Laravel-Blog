@@ -60,7 +60,8 @@
                 Edit
             </a>
         </span>
-
+        
+<!-- Heart icon from https://uiverse.io/barisdogansutcu/tender-dingo-64 -->
         <div class="love pl-7">
             <input id="switch" type="checkbox">
             <label class="love-heart" for="switch">
