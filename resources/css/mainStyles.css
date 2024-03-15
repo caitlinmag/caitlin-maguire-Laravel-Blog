@@ -1,160 +1,267 @@
 
 /* nav bar */
 .bg-blue-900 {
-  --bg-opacity: 1;
-  background-color: #e2cdcd;
-}
-
-.text-lg {
-color: #C29788;
-font-size: 32px;
-font-family: Lucida Handwriting;
-}
-
-/* text in nav bar */
-a{
-color: white;
-font-family: 'Times New Roman', Times, serif;
-}
-
-
-/* main page */
-h1{
-color: rgb(85,83,83,1);
-font-size: 44px;
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-}
-
-h2{
-color: rgb(85,83,83,1);
-font-size: 36px;
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-}
-
-.grid-cols-1 {
-height: 100px;
-color: black;
-font-family: 'Times New Roman', Times, serif;
-}
-
-body{
-background-color: #efe6e6;
-}
-
-.sm:text-white text-5xl {
-color: rgb(210, 145, 145,1);
-}
-
-img{
-height: 350px;
-margin-bottom: 50px;
-}
-
-.text-white{
-background-color: #e2cdcd;
-color: black;
-font-family: 'Times New Roman', Times, serif;
-}
-
-/* view trends */
-.bg-blue-500 {
---bg-opacity: 1;
-background-color: #C29788;
-}
-
-.bg-yellow-700{
-background-color: #C29788;
-margin-bottom: 20px;
-margin-right: 50px;
-font-size: 25px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-span{
-font-size: 30px;
-}
-
-.main-image{
-height: 500px;
-}
-
-/* blog post page */
-.text-6xl{
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-font-size: 44px;
-}
-
-.text-center p-15 bg-black text-white{
-background-color:rgb(147 103 103); 
-}
-
-.h3{
-font-family: 'Times New Roman', Times, serif;
-font-size: 44px;
-color: black;
-}
-
-
-/* login page */
-.bg-gray-200{
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-font-size: 28px;
-color:  rgb(85,83,83,1);
-background-color: #e2cdcd;
-text-align: center;
-}
-
-/* code from the app css file - I only changed the colour of checkbox */
-.form-checkbox {
--webkit-appearance: none;
-   -moz-appearance: none;
-        appearance: none;
--webkit-print-color-adjust: exact;
-        color-adjust: exact;
-display: inline-block;
-vertical-align: middle;
-background-origin: border-box;
--webkit-user-select: none;
-   -moz-user-select: none;
-        user-select: none;
-flex-shrink: 0;
-height: 1rem;
-width: 1rem;
-color: rgb(147 103 103);
-background-color: #ffffff;
-border-color: #d2d6dc;
-border-width: 1px;
-border-radius: 0.25rem;
-}
-
-/* changed the colour of the checkbox shadow and border  */
-.form-checkbox:focus {
-outline: none;
-box-shadow: 0 0 0 3px rgb(85,83,83,1);
-border-color: black;
-}
-
-/* submit button */
-button:hover{
-background-color: white;
-}
-
-/* Footer */
-.bg-gray-800{
-background-color: rgb(149 159 175 / 33%);
-}
-
-.text-gray-400{
-color:  rgb(85,83,83,1);
-font-family: 'Times New Roman', Times, serif;
-}
-
-.group:hover .group-hover\:bg-gray-900 {
---bg-opacity: 1;
-background-color: rgb(85,83,83,1);
-background-color: #eec5c5;
-}
+        --bg-opacity: 1;
+        background-color: #e2cdcd;
+      }
+      
+      .text-lg {
+      color: #C29788;
+      font-size: 32px;
+      font-family: Lucida Handwriting;
+      }
+      
+      /* text in nav bar */
+      a{
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      }
+      
+      
+      /* main page */
+      h1{
+      color: rgb(85,83,83,1);
+      font-size: 44px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      }
+      
+      h2{
+      color: rgb(85,83,83,1);
+      font-size: 36px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      }
+      
+      .grid-cols-1 {
+      height: 100px;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      }
+      
+      body{
+      background-color: #efe6e6;
+      }
+      
+      .sm:text-white text-5xl {
+      color: rgb(210, 145, 145,1);
+      }
+      
+      img{
+      height: 350px;
+      margin-bottom: 50px;
+      }
+      
+      .text-white{
+      background-color: #e2cdcd;
+      font-family: 'Times New Roman', Times, serif;
+      }
+      
+      /* view trends */
+      .bg-blue-500 {
+      --bg-opacity: 1;
+      background-color: #C29788;
+      color: white;
+      }
+      
+      .bg-yellow-700{
+      background-color: #C29788;
+      margin-bottom: 20px;
+      margin-right: 50px;
+      font-size: 25px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      span{
+      font-size: 30px;
+      }
+      
+      .main-image{
+      height: 500px;
+      }
+      
+      /* blog post page */
+      .text-6xl{
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 44px;
+      }
+      
+      .text-center p-15 bg-black text-white{
+      background-color:rgb(147 103 103); 
+      }
+      
+      .h3{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 44px;
+      color: black;
+      }
+      
+      
+      /* login page */
+      .bg-gray-200{
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 28px;
+      color:  rgb(85,83,83,1);
+      background-color: #e2cdcd;
+      text-align: center;
+      }
+      
+      /* code from the app css file - I only changed the colour of checkbox */
+      .form-checkbox {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      -webkit-print-color-adjust: exact;
+              color-adjust: exact;
+      display: inline-block;
+      vertical-align: middle;
+      background-origin: border-box;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+              user-select: none;
+      flex-shrink: 0;
+      height: 1rem;
+      width: 1rem;
+      color: rgb(147 103 103);
+      background-color: #ffffff;
+      border-color: #d2d6dc;
+      border-width: 1px;
+      border-radius: 0.25rem;
+      }
+      
+      /* changed the colour of the checkbox shadow and border  */
+      .form-checkbox:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgb(85,83,83,1);
+      border-color: black;
+      }
+      
+      /* submit button */
+      button:hover{
+      background-color: white;
+      }
+      
+      /* Footer */
+      .bg-gray-800{
+      background-color: rgb(149 159 175 / 33%);
+      }
+      
+      .text-gray-400{
+      color:  rgb(85,83,83,1);
+      font-family: 'Times New Roman', Times, serif;
+      }
+      
+      .group:hover .group-hover\:bg-gray-900 {
+      --bg-opacity: 1;
+      background-color: rgb(85,83,83,1);
+      background-color: #eec5c5;
+      }
+      
+      .pl-7{
+              padding-left: 25rem;
+      }
+      
+      .love-heart:before,#switch {
+              display: none;
+             }
+             
+             .love-heart, .love-heart::after {
+              border-color: hsl(231deg 28% 86%);
+              border: 1px solid;
+              border-top-left-radius: 100px;
+              border-top-right-radius: 100px;
+              width: 10px;
+              height: 8px;
+              border-bottom: 0
+             }
+             
+             .round {
+              position: absolute;
+              z-index: 1;
+              width: 8px;
+              height: 8px;
+              background: hsl(0deg 0% 100%);
+              box-shadow: rgb(0 0 0 / 24%) 0px 0px 4px 0px;
+              border-radius: 100%;
+              left: 0px;
+              bottom: -1px;
+              transition: all .5s ease;
+              animation: check-animation2 .5s forwards;
+             }
+             
+             input:checked + label .round {
+              transform: translate(0px, 0px);
+              animation: check-animation .5s forwards;
+              background-color: hsl(0deg 0% 100%);
+             }
+             
+             @keyframes check-animation {
+              0% {
+               transform: translate(0px, 0px);
+              }
+             
+              50% {
+               transform: translate(0px, 7px);
+              }
+             
+              100% {
+               transform: translate(7px, 7px);
+              }
+             }
+             
+             @keyframes check-animation2 {
+              0% {
+               transform: translate(7px, 7px);
+              }
+             
+              50% {
+               transform: translate(0px, 7px);
+              }
+             
+              100% {
+               transform: translate(0px, 0px);
+              }
+             }
+             
+             .love-heart {
+              box-sizing: border-box;
+              position: relative;
+              transform: rotate(-45deg) translate(-50%, -33px) scale(4);
+              display: block;
+              border-color: hsl(231deg 28% 86%);
+              cursor: pointer;
+              top: 0;
+             }
+             
+             input:checked + .love-heart, input:checked + .love-heart::after, input:checked + .love-heart .bottom {
+              border-color: hsl(347deg 81% 61%);
+              box-shadow: inset 6px -5px 0px 2px hsl(347deg 99% 72%);
+             }
+             
+             .love-heart::after, .love-heart .bottom {
+              content: "";
+              display: block;
+              box-sizing: border-box;
+              position: absolute;
+              border-color: hsl(231deg 28% 86%);
+             }
+             
+             .love-heart::after {
+              right: -9px;
+              transform: rotate(90deg);
+              top: 7px;
+             }
+             
+             .love-heart .bottom {
+              width: 11px;
+              height: 11px;
+              border-left: 1px solid;
+              border-bottom: 1px solid;
+              border-color: hsl(231deg 28% 86%);
+              left: -1px;
+              top: 5px;
+              border-radius: 0px 0px 0px 5px;
+             }
+             
