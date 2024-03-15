@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +20,10 @@ Route::get('/', [PagesController::class, 'index']);
 
 Route::resource('/blog', PostsController::class);
 
+Route::resource('/home', PostsController::class);
+
+Route::resource('/comments', CommentController::class);
+
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -27,6 +31,8 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 //comment system
-Route::post('comments', [\App\Http\Controllers\CommentController::class, 'store'])->name('comments');
+// Route::post('/comments', [\App\Http\Controllers\CommentController::class, 'store']);
+
