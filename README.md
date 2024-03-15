@@ -22,6 +22,11 @@ https://glamazondiaries.com/
 Favicon Image: 
 https://www.vectorstock.com/royalty-free-vector/clothes-hanger-icon-vector-7701085
 
+Heart Icon:
+If I had more time and more knowledge on php I would like to create a page for "liked posts" which would allow users
+to click the heart icon to add to their liked posts.
+https://uiverse.io/barisdogansutcu/tender-dingo-64
+
 Tutorial I used to create the comments, however this code did not work properly:
 https://www.youtube.com/watch?v=rsND5Z4Edw0&t=1375s
 
