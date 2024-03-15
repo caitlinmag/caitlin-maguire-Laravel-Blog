@@ -3,37 +3,39 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Models\Comment;
+use App\Models\Comment;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Validator;
+
 
 class CommentController extends Controller
 {
-    // public function store(Request $_REQUEST){
-    //     if(Auth::check()){
-    //         $validator = Validator::make($_REQUEST->all,[
-    //             'comment_body' => 'required|string'
-    //         ]);
+   /**
+    *  Display comments in the comments.index file
+    */
 
-    //         if($validator->fails){
-    //             redirect()->back()->with('message', 'Please fill in the comment area.');
-    //         }
+     public function index(){
+        return view('comments.index')
+         ->with('comments', Comment::orderBy('updated_at', 'DESC')->get());
+     }
+     
+    /**
+    * Create the comments
+    */
+    public function create(){
+        return view('comments.create');
+    }
 
-    //         $post = Post::where('slug', $_REQUEST->post_slug)->where('status', '0')->first();
-    //         if($post){
-    //             Comment::create([
-    //                 'post_id' => $post->id,
-    //                 'user_id' => Auth::user->id,
-    //                 'comment_body' => $_REQUEST-> comment_body
-    //             ]);
+    /**
+     * Store comments
+     * 
+     */
+    public function store(Request $request){
+        $comment = new Comment();
+        $comment->title = $request->title;
+        $comment->comment_body = $request->comment_body;
+        $comment->save();
 
-    //         }else{
-    //             redirect()->back()->with('message', 'No Post has been found.');
-    //         }
-    //     }
-    //     else{
-    //         redirect()->back()->with('message', 'Login first to comment');
-    //     }
-    // }
+        return redirect()->route('comments.index')
+        ->with('success', 'Your comment has been created.');
+    }
 }

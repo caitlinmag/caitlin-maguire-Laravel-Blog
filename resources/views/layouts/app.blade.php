@@ -29,7 +29,7 @@
                     @guest
                     <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('home') }}</a>
                 <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Blog')}}</a>
-                <a href="{{url('/Trends') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
+                <a href="{{url('/comments') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Comments')}}</a>
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         @if (Route::has('register'))
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
@@ -38,7 +38,7 @@
                      <span>Welcome back</span><span>{{Auth::user()->name }}</span>
                      <a href="{{ url('/') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('home') }}</a>
                 <a href="{{url('/blog') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Blog')}}</a>
-                <a href="{{url('/Trends') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Trends')}}</a>
+                <a href="{{url('/comments') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{__('Comments')}}</a>
                 <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-white uppercase">{{ __('Dashboard') }}</a>
 
                         <a href="{{ route('logout') }}"
